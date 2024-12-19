@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studium Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>Studium</p>
+            <img src="logo.png" alt="Studium Logo">
+        </div>
+       <div id="sidebarMenu"> 
+        <ul class="siderbarMenuInner">
+            <a href="login.html"><span>Log In</span></a>
+            <a href="register.html"><span>Register</span></a>
+        </ul>
+        </div> 
+      </div>
+    </header>
+   
+        
+    <div class="welcome">
+        <h1>Welcome to Studium</h1>
+        <h5>The site where you can chat about your ideas and make them real</h5>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Forum Header -->
+        <div class="forum-header">
+            Forum Categories
+        </div>
+
+        <!-- Forum Categories -->
+        <div class="forum-category">
+            <h2>General Discussion</h2>
+            <p>Talk about anything and everything here.</p>
+        </div>
+
+        <div class="forum-category">
+            <h2>Study Resources</h2>
+            <p>Share notes, study guides, and useful resources.</p>
+        </div>
+
+        <div class="forum-category">
+            <h2>Assignments & Projects</h2>
+            <p>Get help with assignments and collaborate on projects.</p>
+        </div>
+
+        <div class="forum-category">
+            <h2>Announcements</h2>
+            <p>Stay updated with forum news and important announcements.</p>
+        </div>
+
+        <!-- Forum Questions Section -->
+        <div class="forum-header">
+            Recent Questions
+        </div>
+
+        <!-- Ask Question Button -->
+        <div class="ask-question">
+            <button>Ask Question</button>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Studium Forum | All Rights Reserved
+    </footer>
+
+
+    <script src="script.js"></script>
+    
+    </form>
+    
+
+</body>
+</html>
