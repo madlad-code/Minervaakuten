@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fc; /* Light blue background */
+    color: #333; /* Dark gray text */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1E90FF; /* Blue */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1E90FF; /* Blue */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+
+.login-container{
+    position: center;
+}
+
+.login-container h1 {
+    text-align: center;
+    top: 10px;
+
+}
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+
+}
+.logo img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 90px;
+    margin-right: 50px;
+
+}
+
+.logo p {
+    position: relative;
+    right: 30px;
+    top: 50px;
+}
+
+
+
+form {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2a70c1;
+}
+
+
+
