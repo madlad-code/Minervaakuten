@@ -14,11 +14,13 @@ body {
 
 /* Header */
 header {
-    background-color: #fff; /* Blue */
+    background-color: #f4f8fc; /* Blå */
     color: #444444;
-    padding: 1rem 0;
+    padding: 0.25rem 0;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 0.25rem;
+    box-shadow: 0 2px 4px rgba(39, 39, 39, 0.2); 
+    position: relative;
 }
 
 /* Footer */
