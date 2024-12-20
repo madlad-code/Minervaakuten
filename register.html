@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Studium</title>
-    <link rel="stylesheet" href="register.css">
-
+    <title>Minerva Akuten</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <p>Studium</p>
-            <img src="logo.png" alt="Studium Logo">
-        </div>
-        <h1>registrera</h1>
-    </header>
-    <div class="Register">
-        <form id="RegisterForm">
-            <label for="username">First name</label>
-            <input type="text" id="firstname" name="firstname" required>
-            <label for="username">Last name</label>
-            <input type="text" id="lastname" name="lastname" required>
-            <label for="username">Email:</label>
-            <input type="text" id="Email" name="Email" required>
 
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <button type="submit">registrera</button>
-        </form>
-    </div>
+<body>
+    <section>
+            <header>
+                <div class="logo"></div>
+                <nav>
+                    <h1 class="left-align">
+                        <a href="home.html">
+                            <span class="minerva">Minerva</span><br>
+                            <span class="akuten">Akuten</span>
+                        </a>
+                    </h1>
+                    <h2 class="search-container">
+                        <input type="text" placeholder="Search..." id="searchInput">
+                    <!-- Knappar under sökfältet -->
+                    <div class="button-container">
+                        <button class="transparent-btn">Taggar</button>
+                        <button class="transparent-btn">Frågor</button>
+                        <button class="transparent-btn">Om oss</button>
+                    </h2>
+                </nav>
+            </header>
+        
+            <div class="Register">
+                <form id="RegisterForm">
+                    <label for="username">First name</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                    <label for="username">Last name</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                    <label for="username">Email:</label>
+                    <input type="text" id="Email" name="Email" required>
+        
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <button type="submit">registrera</button>
+                </form>
+            </div>
+        <link rel="stylesheet" href="login_register.css">
+    </section>
+
     <footer>
         &copy; 2024 Studium Forum | All Rights Reserved
     </footer>
