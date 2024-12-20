@@ -12,11 +12,12 @@ body {
     line-height: 1.6;
 }
 header {
-    background-color: #1E90FF; /* Blue */
-    color: #fff;
+    background-color: #f4f8fc; /* Blå */
+    color: #444444;
     padding: 1rem 0;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 0.25rem;
+    box-shadow: 0 2px 4px rgba(39, 39, 39, 0.2); 
 }
 
 nav a {
@@ -76,7 +77,7 @@ footer {
 }
 
 .forum-question h3 {
-    color: #1E90FF; /* Blue */
+    color: #2b91fe; /* Blue */
     font-size: 1.1rem;
 }
 
@@ -116,7 +117,7 @@ footer {
 }
 
 .ask-question button {
-    background-color: #1E90FF; /* Blue button */
+    background-color: #1E90FF; 
     color: #fff;
     padding: 10px 20px;
     font-size: 1rem;
@@ -127,7 +128,7 @@ footer {
 }
 
 .ask-question button:hover {
-    background-color: #2a70c1; /* Green on hover */
+    background-color: #2a70c1;
 }
 
 
@@ -150,5 +151,105 @@ footer {
     color: black;
     margin-bottom: 600px;
     margin-right: 20px;
+}
+
+nav {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-align: left;
+    padding-left: 50px;
+}
+
+h1.left-align {
+    font-size: 28px; /* Justerar storleken på hela texten */
+    line-height: 1.1; /* Justerar avståndet mellan raderna */
+    margin-top: 10px;
+}
+
+.minerva {
+    font-weight: normal;
+    display: inline-block;
+}
+
+.akuten {
+    font-weight: bold;
+    display: block; /* Flyttar "Akuten" till en ny rad */
+    margin-top: -10px; /* Justerar mellanrum mellan raderna */
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(48, 48, 48);
+}
+
+
+/* Styla sökfältet */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    left: 50%;
+    margin-top: -40px;
+    transform: translateX(-50%);
+    top: 50px; 
+    width: 120%; 
+    max-width: 600px; 
+    padding: 0 20px; 
+}
+
+    .search-container input[type="text"] {
+    width: 100%; 
+    padding: 0.5rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    box-shadow: 0 4px 8px rgba(46, 46, 46, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+    .search-container input[type="text"]:focus {
+    outline: none; /* Tar bort den blå kanten när fältet är i fokus */
+}
+
+    .search-container input[type="text"]::placeholder {
+    color: #888; /* Ljusgrå färg på placeholdertext */
+}
+
+    /* Knappar under sökfältet */
+    .button-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 50px;
+    margin-top: 10px;
+}
+/* Style för knapparna */
+    .transparent-btn {
+    font-family: Verdana, sans-serif;
+    background-color: transparent; 
+    color: #313131; 
+    border: 0px solid #294968; 
+    border-radius: 4px;
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-size: 14px; 
+    transition: none; 
+    outline: none; 
+}
+
+/* När man hovrar över knapparna */
+    .transparent-btn:hover {
+    background-color: #edf2f7;
+    color: #282828;
+    border-color: #294968;
+}
+
+    .transparent-btn:active {
+    background-color: transparent;
+    color: #294968;
+    border-color: #294968;
 }
 
