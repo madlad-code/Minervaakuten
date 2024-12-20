@@ -14,8 +14,8 @@ body {
 
 /* Header */
 header {
-    background-color: #1E90FF; /* Blue */
-    color: #fff;
+    background-color: #fff; /* Blue */
+    color: #444444;
     padding: 1rem 0;
     text-align: center;
     font-size: 1.5rem;
