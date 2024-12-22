@@ -153,24 +153,21 @@ footer {
     z-index: 1000;      /* Ensures it stays above other elements */
 }
 
-.sidebarMenuInner {
-    list-style: none; /* Removes bullets from list */
-    margin: 0;
-    padding: 0;
+.siderbarMenuInner button {
+    border: none;
+    background-color: #f4f8fc;
+    color: black;
+    padding: 20px;
+    transition-duration: 0.4s;
+    font-size: 0.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+
 }
 
-.sidebarMenuInner a {
-    display: block; /* Makes each button act as a block */
-    text-decoration: none; /* Removes underline */
-    color: white; /* White button text */
-    background-color: #007BFF; /* Blue button color */
-    font-size: 14px; /* Adjust font size */
-    padding: 10px 15px; /* Adds spacing inside the buttons */
-    margin-bottom: 10px; /* Space between buttons */
-    border-radius: 5px; /* Rounded button corners */
-    text-align: center; /* Center-aligns button text */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+.siderbarMenuInner button:hover {
+    background-color: blue;
+    color: black;
 }
 
 /* Search Field Styling */
@@ -212,8 +209,26 @@ footer {
     display: flex;
     flex-direction: row; 
     gap: 50px;
-    margin-top: 10px;
 }
+
+.button-container button {
+    border: none;
+    background-color: #f4f8fc;
+    color: black;
+    padding: 10px;
+    transition-duration: 0.4s;
+    border-radius: 30px;
+    text-decoration: none;
+    width: 66px;
+}
+
+
+.button-container button:hover {
+    background-color: blue;
+    color: black;
+}
+
+
 
 .transparent-btn {
     font-family: Verdana, sans-serif;
