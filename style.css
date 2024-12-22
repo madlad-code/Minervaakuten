@@ -11,6 +11,8 @@ body {
     color: #333333; /* Dark gray text */
     line-height: 1.6;
 }
+
+/* Header */
 header {
     background-color: #f4f8fc; /* Blå */
     color: #444444;
@@ -19,6 +21,12 @@ header {
     font-size: 0.25rem;
     box-shadow: 0 2px 4px rgba(39, 39, 39, 0.2); 
     position: relative;
+}
+
+nav {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-align: left;
+    padding-left: 50px;
 }
 
 nav h1 {
@@ -31,6 +39,26 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     margin-left: 30px;
+    padding: 10px;
+    color: rgb(48, 48, 48);
+}
+
+h1.left-align {
+    font-size: 28px; /* Adjusts text size */
+    line-height: 1.1; /* Adjusts line spacing */
+    margin-top: 10px;
+}
+
+.minerva {
+    font-weight: normal;
+    display: inline-block;
+}
+
+.akuten {
+    font-weight: bold;
+    display: block; /* Moves "Akuten" to a new line */
+    margin-top: -10px; /* Adjusts spacing between lines */
+    position: relative;
 }
 
 /* Footer */
@@ -42,7 +70,6 @@ footer {
     margin-top: 20px;
     font-size: 0.9rem;
 }
-
 
 /* Main Content */
 .container {
@@ -92,26 +119,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Logo Styling */
-.logo {
-    position: absolute;
-
-}
-.logo img {
-    width: 150px;
-    height: 150px;
-    position: relative;
-    bottom: 90px;
-    margin-right: 50px;
-
-}
-
-.logo p {
-    position: relative;
-    right: 30px;
-    top: 50px;
-}
-
 
 /* Ask Question Button Styling */
 .ask-question {
@@ -138,16 +145,7 @@ footer {
 }
 
 
-.welcome {
-    text-align: center;
-    margin: 1px;
-    padding: 1px;
-}
-
-.welcome h1 {
-    margin-right: 30px;
-}
-
+/* Sidebar Menu */
 #sidebarMenu {
     position: absolute; /* Positioned relative to the nearest parent */
     top: 10px;          /* Slightly below the top of the header */
@@ -155,7 +153,6 @@ footer {
     z-index: 1000;      /* Ensures it stays above other elements */
 }
 
-/* Sidebar Menu Inner Buttons */
 .sidebarMenuInner {
     list-style: none; /* Removes bullets from list */
     margin: 0;
@@ -176,38 +173,7 @@ footer {
     transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-nav {
-    font-family: 'Alegreya Sans SC', sans-serif;
-    text-align: left;
-    padding-left: 50px;
-}
-
-h1.left-align {
-    font-size: 28px; /* Justerar storleken på hela texten */
-    line-height: 1.1; /* Justerar avståndet mellan raderna */
-    margin-top: 10px;
-}
-
-.minerva {
-    font-weight: normal;
-    display: inline-block;
-}
-
-.akuten {
-    font-weight: bold;
-    display: block; /* Flyttar "Akuten" till en ny rad */
-    margin-top: -10px; /* Justerar mellanrum mellan raderna */
-    position: relative;
-}
-
-nav a {
-    text-decoration: none;
-    padding: 10px;
-    color: rgb(48, 48, 48);
-}
-
-
-/* Styla sökfältet */
+/* Search Field Styling */
 .search-container {
     display: flex;
     flex-direction: column;
@@ -223,34 +189,33 @@ nav a {
     padding: 0 20px; 
 }
 
-    .search-container input[type="text"] {
+.search-container input[type="text"] {
     width: 100%; 
     padding: 0.5rem;
     font-size: 16px;
     border: none;
     border-radius: 4px;
-    box-sizing: border-box; 
     box-shadow: 0 4px 8px rgba(46, 46, 46, 0.1);
     transition: box-shadow 0.3s ease;
 }
 
-    .search-container input[type="text"]:focus {
-    outline: none; /* Tar bort den blå kanten när fältet är i fokus */
+.search-container input[type="text"]:focus {
+    outline: none; /* Removes the blue outline when focused */
 }
 
-    .search-container input[type="text"]::placeholder {
-    color: #888; /* Ljusgrå färg på placeholdertext */
+.search-container input[type="text"]::placeholder {
+    color: #888; /* Light gray placeholder text */
 }
 
-    /* Knappar under sökfältet */
-    .button-container {
+/* Buttons Below Search Field */
+.button-container {
     display: flex;
     flex-direction: row; 
     gap: 50px;
     margin-top: 10px;
 }
-/* Style för knapparna */
-    .transparent-btn {
+
+.transparent-btn {
     font-family: Verdana, sans-serif;
     background-color: transparent; 
     color: #313131; 
@@ -263,16 +228,62 @@ nav a {
     outline: none; 
 }
 
-/* När man hovrar över knapparna */
-    .transparent-btn:hover {
+.transparent-btn:hover {
     background-color: #edf2f7;
     color: #282828;
     border-color: #294968;
 }
 
-    .transparent-btn:active {
+.transparent-btn:active {
     background-color: transparent;
     color: #294968;
     border-color: #294968;
 }
 
+/* Login Container */
+.login-container {
+    position: center;
+}
+
+.login-container h1 {
+    text-align: center;
+    top: 10px;
+}
+
+form {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2a70c1;
+}
