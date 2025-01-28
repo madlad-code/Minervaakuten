@@ -287,3 +287,54 @@ form button {
 form button:hover {
     background-color: #2a70c1;
 }
+
+/* Container för dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown-knapp */
+.dropdown-btn {
+    background-color: #1E90FF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+    background-color: #2a70c1;
+}
+
+/* Dropdown-innehåll (gömt som standard) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Länkar i dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Visa dropdown-innehåll när man hoverar eller klickar */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

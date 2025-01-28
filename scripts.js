@@ -46,3 +46,21 @@ function navigateToRegister() {
     alert("Register page is under construction!");
 }
 
+// Hämta dropdown-knappen och innehållet
+const dropdownBtn = document.querySelector('.dropdown-btn');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+// Lägg till en klick-händelse på knappen
+dropdownBtn.addEventListener('click', () => {
+    dropdownContent.style.display =
+        dropdownContent.style.display === 'block' ? 'none' : 'block';
+});
+
+// Stäng dropdown om användaren klickar utanför
+window.addEventListener('click', (e) => {
+    if (!dropdownBtn.contains(e.target) && !dropdownContent.contains(e.target)) {
+        dropdownContent.style.display = 'none';
+    }
+});
+
+
