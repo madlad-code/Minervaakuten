@@ -62,5 +62,3 @@ window.addEventListener('click', (e) => {
         dropdownContent.style.display = 'none';
     }
 });
-
-
